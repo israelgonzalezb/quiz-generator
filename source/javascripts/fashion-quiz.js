@@ -11,7 +11,7 @@ function getSpreadSheet() {
   Tabletop.init({
     key: '1kVfAkLUXOxVgtTvw-Z4MSlvVfrNr8-6XdBPtQwHQ_lI',
     callback: function(data, tabletop) {
-      console.log(data)
+      //console.log(data)
       input = data;
       buildQuiz(input);
     }, simpleSheet: true

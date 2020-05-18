@@ -7,23 +7,23 @@
 <div class="container">
   <h4> Write your quiz</h4>
 
-  <h5>Choose a Quiz Type</h5>
+  <h5>Choose a Quiz Type QUICKLY</h5>
   <form>
-    <input type="radio" name="quiz-type" value="quiz"><label>Multiple Choice</label>
+    <input type="radio" name="quiz-type" value="quiz" checked><label>Multiple Choice</label>
     <input type="radio" name="quiz-type" value="flowchart"><label>Flowchart</label>
     <input type="radio" name="quiz-type" value="binary"><label>True/False</label>
   </form> 
   
   <p>Use <a id="quiz-template" target="_new">this Google Spreadsheet template</a> to write your quiz.</p>
-  <p>Once you're done editing, publish the spreadsheet to the web. Under the <b>"File"</b> menu, select <b>"Publish to the Web."</b> Click <b>"Start Publishing"</b> and copy the URL to build the quiz.</p>
+  <p>Once youre done editing, publish the spreadsheet to the web. Under the <b>"File"</b> menu, select <b>"Publish to the Web."</b> Click <b>"Start Publishing"</b> and copy the URL to build the quiz.</p>
   <center><p style="font-size:0.8em">Want to test it out? Try this spreadsheet:<br><textarea style="overflow:auto;" rows="1" id="example-spreadsheet"></textarea></p></center>
 
   <h5> Enter your spreadsheet</h5>
-  <p>Copy and paste your spreadsheet's URL here: <input type="text" id="url"></p>
+  <p>Copy and paste your spreadsheets URL here: <input type="text" id="url" value="https://docs.google.com/spreadsheets/d/1c--zHE_kSIKJY9cF8gq9s7Lh077L0Vzfh46tOH6mRmE/edit#gid=0"></p>
 
   <h5> Select your vertical</h5>
   <form>
-    <input type="radio" name="pub" value="vox"><label>Vox</label>
+    <input type="radio" name="pub" value="vox" checked><label>Vox</label>
     <input type="radio" name="pub" value="sbnation"><label>SB Nation</label>
     <input type="radio" name="pub" value="verge"><label>The Verge</label>
     <input type="radio" name="pub" value="polygon"><label>Polygon</label>
@@ -42,9 +42,11 @@
 </div>
 
 <div class="quiz-preview">
-  <div class="quiz-container"></div>
+  <!--<div class="quiz-container"></div>-->
 </div>
 
 <script src="javascripts/jquery.min.js"></script>
 <script src="javascripts/tabletop.js"></script>
 <script src="javascripts/getdata.js"></script>
+
+<div class='quiz-container'></div><script type='text/javascript'>window.jQuery || document.write("<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'><\/script>");</script><script type='text/javascript'>var input = [{"description":"Donec mauris erat, iaculis faucibus molestie eu, convallis non nibh. Etiam non dui quis massa auctor dapibus in vel libero. Etiam fermentum eros ante, ac dapibus erat ultrices eget. Sed dictum arcu ac risus semper, ac iaculis sem dignissim. Suspendisse eget tortor sapien. Suspendisse potenti. Ut ornare lectus nisi, at ornare eros accumsan et. Cras sed nunc congue, bibendum massa sit amet, varius dui. Proin dolor tortor, elementum quis mauris vel, vehicula tempor augue.","question":"Which country won their first World Cup game in 2014?","a":"Slovakia","b":"Ghana","c":"Bosnia and Herzegovina","d":"Cote d'Ivoire","answer":"Bosnia and Herzegovina","incorrect":"Slovakia first played in the World Cup in 2010, Ghana and Cote d'Ivoire in 2006.","correct":"Bosnia and Herzegovina <a href=\"http://www.theguardian.com/football/2014/jun/25/bosnia-herzegovina-iran-world-cup-group-f-match-report\" target=\"_blank\">won their first World Cup match</a> against Iran 3-1.","hint":"There is only one country that is a first-timer in the 2014 World Cup."},{"description":"reee","question":"How many editions of the World Cup have been won by the host team?","a":"6","b":"13","c":"8","d":"5","answer":"6","incorrect":"Uruguay, Italy, England, Germany, Argentina and France are the six host teams to have won the World Cup.","correct":"Uruguay, Italy, England, Germany, Argentina and France are the six host teams to have won the World Cup.","hint":"19 editions of the World Cup have been hosted in total."},{"description":"Suspendisse potenti. Ut ornare lectus nisi, at ornare eros accumsan et. Cras sed nunc congue, bibendum massa sit amet, varius dui. Proin dolor tortor, elementum quis mauris vel, vehicula tempor augue.","question":"Who is the World Cup's all-time leading scorer?","a":"Klose","b":"Kocsis","c":"Fontaine","d":"Ronaldo","answer":"Klose","incorrect":"Fontaine holds the record for most goals in a single tournament. Kocsis has the tournament's best scoring average. Klose just beat Ronaldo's record in the semifinal game against Brazil on July 8, 2014.","correct":"Ronaldo was the leading scorer with 15 goals until Klose beat his record in Brazil 2014.","hint":"Brazil fans are very upset."}]; var pubStylesheet = 'http://assets.sbnation.com.s3.amazonaws.com/features/quiz-generator/quiz-vox.css'; var pub = 'vox'; </script><script src='http://assets.sbnation.com.s3.amazonaws.com/features/quiz-generator/quiz.js'></script>
